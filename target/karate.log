@@ -1,0 +1,165 @@
+18:36:59.607 [main]  INFO  com.intuit.karate - Karate version: 1.5.0.RC3
+18:36:59.763 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1715877419761
+18:37:00.376 [main]  DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/api/v1/customer
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 452
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"id":1,"name":"Lolo","email":"lolo@lollo.com","phone":"666777888999","address":"Av. no existe s\/n","city":"Barcelona","state":"Catalunya","country":"España","zip":"08901","company":"Rommel","position":"QA","website":"www.lolo.com","twitter":"string","facebook":"string","linkedin":"string","github":"string","instagram":"string","youtube":"string","tiktok":"string","snapchat":"string","twitch":"string","other":"string","notes":"string","age":1000}
+
+18:37:00.565 [main]  DEBUG com.intuit.karate - response time in milliseconds: 187
+1 < 201
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Thu, 16 May 2024 16:37:00 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"id":1,"name":"Lolo","email":"lolo@lollo.com","phone":"666777888999","address":"Av. no existe s/n","city":"Barcelona","state":"Catalunya","country":"España","zip":"08901","company":"Rommel","position":"QA","website":"www.lolo.com","twitter":"string","facebook":"string","linkedin":"string","github":"string","instagram":"string","youtube":"string","tiktok":"string","snapchat":"string","twitch":"string","other":"string","notes":"string","age":1000}
+
+18:37:00.571 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/api/v1/customer
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+18:37:00.627 [main]  DEBUG com.intuit.karate - response time in milliseconds: 56
+1 < 200
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Thu, 16 May 2024 16:37:00 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+[{"id":1,"name":"Lolo","email":"lolo@lollo.com","phone":"666777888999","address":"Av. no existe s/n","city":"Barcelona","state":"Catalunya","country":"España","zip":"08901","company":"Rommel","position":"QA","website":"www.lolo.com","twitter":"string","facebook":"string","linkedin":"string","github":"string","instagram":"string","youtube":"string","tiktok":"string","snapchat":"string","twitch":"string","other":"string","notes":"string","age":1000}]
+
+18:37:00.661 [main]  INFO  com.intuit.karate - [print] El response es -> [
+  {
+    "id": 1,
+    "name": "Lolo",
+    "email": "lolo@lollo.com",
+    "phone": "666777888999",
+    "address": "Av. no existe s/n",
+    "city": "Barcelona",
+    "state": "Catalunya",
+    "country": "España",
+    "zip": "08901",
+    "company": "Rommel",
+    "position": "QA",
+    "website": "www.lolo.com",
+    "twitter": "string",
+    "facebook": "string",
+    "linkedin": "string",
+    "github": "string",
+    "instagram": "string",
+    "youtube": "string",
+    "tiktok": "string",
+    "snapchat": "string",
+    "twitch": "string",
+    "other": "string",
+    "notes": "string",
+    "age": 1000
+  }
+]
+ 
+18:37:00.670 [main]  INFO  com.intuit.karate - [print] El numero de elementos del response es -> 1 
+18:37:00.680 [main]  DEBUG com.intuit.karate - request:
+1 > PUT http://localhost:8080/api/v1/customer
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 468
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"id":1,"name":"Lolo","email":"lolo-modificado-karate@lolo.com","phone":"777-777-777","address":"Av. no existe s\/n","city":"Barcelona","state":"Catalunya","country":"España","zip":"08901","company":"Rommel","position":"QA","website":"www.lolo.com","twitter":"string","facebook":"string","linkedin":"string","github":"string","instagram":"string","youtube":"string","tiktok":"string","snapchat":"string","twitch":"string","other":"string","notes":"string","age":1000}
+
+18:37:00.688 [main]  DEBUG com.intuit.karate - response time in milliseconds: 8
+1 < 200
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Thu, 16 May 2024 16:37:00 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"id":1,"name":"Lolo","email":"lolo-modificado-karate@lolo.com","phone":"777-777-777","address":"Av. no existe s/n","city":"Barcelona","state":"Catalunya","country":"España","zip":"08901","company":"Rommel","position":"QA","website":"www.lolo.com","twitter":"string","facebook":"string","linkedin":"string","github":"string","instagram":"string","youtube":"string","tiktok":"string","snapchat":"string","twitch":"string","other":"string","notes":"string","age":1000}
+
+18:37:00.692 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/api/v1/customer/1
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+18:37:00.697 [main]  DEBUG com.intuit.karate - response time in milliseconds: 5
+1 < 200
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Thu, 16 May 2024 16:37:00 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"id":1,"name":"Lolo","email":"lolo-modificado-karate@lolo.com","phone":"777-777-777","address":"Av. no existe s/n","city":"Barcelona","state":"Catalunya","country":"España","zip":"08901","company":"Rommel","position":"QA","website":"www.lolo.com","twitter":"string","facebook":"string","linkedin":"string","github":"string","instagram":"string","youtube":"string","tiktok":"string","snapchat":"string","twitch":"string","other":"string","notes":"string","age":1000}
+
+18:37:00.698 [main]  INFO  com.intuit.karate - [print] El response es -> {
+  "id": 1,
+  "name": "Lolo",
+  "email": "lolo-modificado-karate@lolo.com",
+  "phone": "777-777-777",
+  "address": "Av. no existe s/n",
+  "city": "Barcelona",
+  "state": "Catalunya",
+  "country": "España",
+  "zip": "08901",
+  "company": "Rommel",
+  "position": "QA",
+  "website": "www.lolo.com",
+  "twitter": "string",
+  "facebook": "string",
+  "linkedin": "string",
+  "github": "string",
+  "instagram": "string",
+  "youtube": "string",
+  "tiktok": "string",
+  "snapchat": "string",
+  "twitch": "string",
+  "other": "string",
+  "notes": "string",
+  "age": 1000
+}
+ 
+18:37:00.704 [main]  INFO  com.intuit.karate - [print] El numero de elementos del response es -> 24 
+18:37:00.714 [main]  DEBUG com.intuit.karate - request:
+1 > PATCH http://localhost:8080/api/v1/customer/1?name=Lolo+Modificado
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+18:37:00.722 [main]  DEBUG com.intuit.karate - response time in milliseconds: 8
+1 < 200
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Thu, 16 May 2024 16:37:00 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"id":1,"name":"Lolo Modificado","email":"lolo-modificado-karate@lolo.com","phone":"777-777-777","address":"Av. no existe s/n","city":"Barcelona","state":"Catalunya","country":"España","zip":"08901","company":"Rommel","position":"QA","website":"www.lolo.com","twitter":"string","facebook":"string","linkedin":"string","github":"string","instagram":"string","youtube":"string","tiktok":"string","snapchat":"string","twitch":"string","other":"string","notes":"string","age":1000}
+
+18:37:01.026 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) customers.feature
