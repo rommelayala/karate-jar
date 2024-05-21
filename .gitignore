@@ -93,7 +93,7 @@ fabric.properties
 ### Java ###
 # Compiled class file
 *.class
-target/*
+target
 
 # Log file
 *.log

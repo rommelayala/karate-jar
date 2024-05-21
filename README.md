@@ -1,11 +1,6 @@
 # karate-jar
-Para lazar los test:
+Este proyecto es para probar la funcionalidad de ejecutar los test con karate usardo el el jar de karate, hay 2 carpetas en las cuales puedes encontrar:
+  - Carpeta  [ejecutar-test-en-local](ejecutar-test-en-local) : Hay una aplicación hecha en java la cual hay que ejecutarla manualmente siguiendo las instrucciones del Readme.MD que hay dentro de la carpeta
+  - Carpeta [ejecutar-test-online](ejecutar-test-online) : Simplemente hay que ejecutas el archivo [rickandmortiapi](ejecutar-test-online/rickandmortiapi.feature)
 
-+ customers.feature
-  +  Tiene tests que se lanzan a localhost:8080, para ejecutarlos:
-  1 .- Ejecuta el jar de la aplicacion [customer-jar-repo](https://github.com/rommelayala/customer-back)
-    Dentro de la carpeta donde esta el jar ejecuta
-        java -jar customer-0.0.1-SNAPSHOT.jar
-    
-    Luego dentro de la misma carpeta donde esta el feature (Los tests) ejecuta
-        java -jar karate-1.5.0.RC3.jar customers.feature
+  java -jar karate-1.5.0.RC3.jar rickandmortiapi.feature
